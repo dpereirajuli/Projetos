@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+}
+
+.div-logo{
+    width: 30%;
+}
+
+.nav-bar{
+    background-color: #006b9c50   ;
+    width: 100%;
+    height: 15vh;
+}
+
+#img-nav{
+    width: 15vh;
+    padding: 2%;
+}
+
+.nav-item{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.ativar-menu{
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .ativar-menu{
+        display: block;
+        margin-right: 10vh;
+    }
+
+    #img-nav{
+        width: 13vh;
+
+    }
+  }
+
+
+
+
+
+
+

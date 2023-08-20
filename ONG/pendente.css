@@ -1,0 +1,23 @@
+#th-acesso{
+    text-align: center;
+    width: 10%;
+}
+
+#td-acesso{
+    text-align: center;
+}
+
+
+.foto{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+@media (max-width: 1451px) {
+    #th-acesso{
+        width: 30%;
+    }
+  }

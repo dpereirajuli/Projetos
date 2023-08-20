@@ -1,0 +1,30 @@
+.carteirinha {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    
+}
+.foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#azul{
+    background-color: #006a9c  ;
+    border-radius: 10px;
+    color: white;
+}
+
+@media only screen and (max-width: 648px) {
+
+    .carteirinha{
+        margin-bottom: 10%;
+
+    }
+}
