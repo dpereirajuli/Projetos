@@ -63,7 +63,7 @@ button{
     display: flex; /* Define um layout flexível */
     justify-content: space-evenly;
     background-color: rgb(248, 74, 74);
-    height: 450px;
+    height: 1000px;
     background-image: url('/img/logo_grande.png');
 
 }
@@ -74,7 +74,7 @@ button{
     border: 1px solid rgb(144, 144, 144); /* Adicione uma borda para separar os cartões */
     padding: 20px; /* Adicione algum espaço interno aos cartões */
     margin: -60px;
-    height: 400px;
+    height:650px;
     background-color: white;
     border-radius: 10px;
 }
@@ -90,7 +90,7 @@ button{
 
 .banner{
     display: flex;
-    margin-top: 100px;
+    margin-top: -300px;
 }
 
 .banner img{
