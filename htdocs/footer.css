@@ -1,0 +1,9 @@
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+ul{
+    padding: 20px;
+}
