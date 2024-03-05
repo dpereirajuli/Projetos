@@ -8,11 +8,16 @@ function compararInput() {
     var variavelComparacaoPassword = "teste123";
 
     // Comparando o input com a variável
-    if (InputEmail === variavelComparacao | InputPassword === variavelComparacaoPassword) {
-        alert("O input é igual à variável de comparação.");
-        alert("O input é igual à variável de comparação.");
-    } else {
-        alert("O input é diferente da variável de comparação.");
-        console.log('O input é diferente da variável de comparação.');
+    if (InputEmail === variavelComparacaoEmail && InputPassword === variavelComparacaoPassword) {
+        alert("Logado com sucesso!!!");
+    } 
+    else {
+        /////separação informando se está errado o email ou se é a senha
+        if(InputEmail != variavelComparacaoEmail){
+            alert("Não existe cadastro para este email.");
+        }
+        else if(InputPassword != variavelComparacaoPassword){
+            alert("Senha Invalida");
+        }
     }
 }
