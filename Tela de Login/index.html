@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="TelaLogin.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <title>Login</title>
+</head>
+    <body>
+        <main>
+            <section>
+                <div class="BackForm">
+                    <!----FORMULARIO PARA LOGIN, ELE VIRAR NONE CASO CLIQUE EM ESQUECI A SENHA, SE NÃO ELE CHAMA O ARQUIVO TELALOGIN.JS-->
+                    <form id="FormLogin">
+                        <div class="ImgUsuario">
+                            <img src="/assets/img/logo_usuario.webp" alt="Boneco Usuário">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="InputPassword">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Lembra login</label>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-link"  id="esqueciasenha" onclick="senha()">Esqueci a senha</button>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary"  onclick="compararInput()">Entrar</button>
+                    </form>
+                    
+                    <!----FORMULARIO ESQUECI A SENHA, ELE ESTA NONE E APÓS O JS DO BOTÃO IRÁ APARECER-->
+                    <form id="FormEqueciaSenha">
+                        <div class="ImgUsuario">
+                            <img src="/assets/img/logo_usuario.webp" alt="Boneco Usuário">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Digite seu email para recuperar a senha</label>
+                            <input type="email" class="form-control" id="InputEmailReset" aria-describedby="emailHelp">
+                        </div>
+                        <button type="button" class="btn btn-primary"  onclick="enviosenha()">Recuperar a senha</button>
+                    </form>
+                </div>
+            </section>
+            
+            <footer>
+                <p>© 2024 Daniel Pereira - Todos os direitos reservados.</p>
+            </footer>
+        </main>
+    </body>
+</html>
