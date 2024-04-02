@@ -1,0 +1,80 @@
+:root {
+    --AzulEscuro: #004AAD;
+    --AzulClaro: #29323c;
+    --Amarelo: #FFDE59;
+  }
+
+  
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+#services .service-top{
+    width: 500px;
+    margin: 0 auto;
+}
+#services .service-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#services .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#services .card1{
+    background-image: url(/img/CardGrafiato.png);
+}
+#services .card2{
+    background-image: url(/img/CardTelhado.png);
+}
+#services .card3{
+    background-image: url(/img/CardPredial.png);
+}
+
+#services .card4{
+    background-image: url(/img/CardTextura.png);
+}
+
+#services .service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #48556360 100%);
+    opacity: .9;
+    z-index: -1;
+}
+#services .service-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#services .service-item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#services .service-item p{
+    color: white;
+    text-align: left;
+}

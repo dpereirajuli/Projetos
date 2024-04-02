@@ -1,0 +1,84 @@
+:root {
+    --AzulEscuro: #004AAD;
+    --AzulClaro: #29323c;
+    --Amarelo: #FFDE59;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.section-title span{
+    color: var(--AzulClaro);
+}
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--Amarelo);
+    background-color: transparent;
+    border: 2px solid var(--Amarelo);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 36px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.cta:hover{
+    color: var(--AzulEscuro);
+    background-color: var(--Amarelo)    ;
+}
+.brand{
+    width: 17rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.BtnWhats{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 999;
+    width: 6rem;
+}   

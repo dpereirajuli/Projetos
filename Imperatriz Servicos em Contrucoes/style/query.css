@@ -1,0 +1,159 @@
+/* Tablet */
+@media only screen and (min-width:768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    /* hero */
+    #hero h1{
+        font-size: 7rem;
+    }
+    /* Fim hero */
+
+    /* services */
+    #services .service-bottom .service-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    /* Fim services */
+
+    /* projects */
+    #projects .project-item{
+        flex-direction: row;
+        width: 50%;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+    #projects .all-projects .project-img{
+        height: 100%;
+        width: 50%;
+    }
+    /* Fim projects */
+
+    /* about */
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after{
+        left: -45;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+    }
+    #about .col-right{
+        text-align: left;
+    }
+    #about .col-right h1{
+        text-align: left;
+    }
+    /* Fim about */
+
+    /* contact */
+    #contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .contact-item .icon img {
+		object-fit: contain;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+    /* Fim contact */
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px){
+    #header .hamburger{
+        display: none;
+    }
+    #header .nav-list ul{
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    #header .nav-list ul li{
+        display: inline-block;
+    }
+    #header .nav-list ul li a{
+        font-size: 1.8rem;
+    }
+    #header .nav-list ul a:after{
+        display: none;
+    }
+    #services .service-bottom .service-item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+
+    .carousel{
+        width: 30vw;
+    }
+
+    .BtnWhats{
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+        z-index: 999;
+        width: 10rem;
+    }   
+}
+
+@media only screen and (max-width: 500px){
+    #header .nav-list ul{
+        left: 160%;
+    }
+    #services .service-top{
+        width: auto;
+    }
+
+    .carousel{
+        width: 80vw;
+        margin: auto;
+    }
+
+    .Slide{
+        margin: 10% auto;
+    }
+}
